@@ -11,3 +11,9 @@ __pycache__/
 results/*_stdout.txt
 results/*superseded*
 Case_Study_Method_Guide.md
+
+# Submission documents are not part of the code release
+Case_Study_Report.*
+results/defence_ALS-MF_clean_schema.csv
+results/defence_stdout.txt
+results/detection_stdout.txt

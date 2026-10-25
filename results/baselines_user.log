@@ -1,0 +1,67 @@
+2026-10-25 23:35:14,189 INFO python 3.14.0 numpy 2.3.4 pandas 2.3.3
+2026-10-25 23:35:14,278 INFO split=user train=80000 test=20000 cutoff_ts=None {'test_unseen_user': 0.0, 'test_unseen_item': 0.0044}
+2026-10-25 23:35:14,321 INFO tune GlobalMean {} -> val_rmse=1.1473
+2026-10-25 23:35:14,323 INFO GlobalMean best params: {}
+2026-10-25 23:35:14,374 INFO GlobalMean   seed=None rmse=1.2099 ndcg@10=0.0312 fit=0.0s
+2026-10-25 23:35:14,432 INFO tune DampedItemMean {'damp': 0.0} -> val_rmse=1.0490
+2026-10-25 23:35:14,447 INFO tune DampedItemMean {'damp': 5.0} -> val_rmse=1.0483
+2026-10-25 23:35:14,466 INFO tune DampedItemMean {'damp': 25.0} -> val_rmse=1.0728
+2026-10-25 23:35:14,467 INFO ItemMean best params: {'damp': 5.0}
+2026-10-25 23:35:14,592 INFO ItemMean     seed=None rmse=1.0720 ndcg@10=0.0435 fit=0.0s
+2026-10-25 23:35:14,653 INFO tune Popularity {'damp': 5.0} -> val_rmse=1.0483
+2026-10-25 23:35:14,654 INFO Popularity best params: {'damp': 5.0}
+2026-10-25 23:35:14,744 INFO Popularity   seed=None rmse=1.0720 ndcg@10=0.0915 fit=0.0s
+2026-10-25 23:35:14,785 INFO tune RandomRanker {} -> val_rmse=1.1473
+2026-10-25 23:35:14,786 INFO Random best params: {}
+2026-10-25 23:35:14,904 INFO Random       seed=0 rmse=1.2099 ndcg@10=0.0097 fit=0.0s
+2026-10-25 23:35:15,017 INFO Random       seed=1 rmse=1.2099 ndcg@10=0.0060 fit=0.0s
+2026-10-25 23:35:15,136 INFO Random       seed=2 rmse=1.2099 ndcg@10=0.0072 fit=0.0s
+2026-10-25 23:35:15,261 INFO Random       seed=3 rmse=1.2099 ndcg@10=0.0081 fit=0.0s
+2026-10-25 23:35:15,379 INFO Random       seed=4 rmse=1.2099 ndcg@10=0.0078 fit=0.0s
+2026-10-25 23:35:15,779 INFO tune BiasOnly {'reg_item': 5.0, 'reg_user': 5.0} -> val_rmse=0.9720
+2026-10-25 23:35:16,147 INFO tune BiasOnly {'reg_item': 5.0, 'reg_user': 15.0} -> val_rmse=0.9736
+2026-10-25 23:35:16,505 INFO tune BiasOnly {'reg_item': 5.0, 'reg_user': 25.0} -> val_rmse=0.9758
+2026-10-25 23:35:16,764 INFO tune BiasOnly {'reg_item': 10.0, 'reg_user': 5.0} -> val_rmse=0.9780
+2026-10-25 23:35:17,043 INFO tune BiasOnly {'reg_item': 10.0, 'reg_user': 15.0} -> val_rmse=0.9800
+2026-10-25 23:35:17,323 INFO tune BiasOnly {'reg_item': 10.0, 'reg_user': 25.0} -> val_rmse=0.9825
+2026-10-25 23:35:17,584 INFO tune BiasOnly {'reg_item': 25.0, 'reg_user': 5.0} -> val_rmse=0.9909
+2026-10-25 23:35:17,870 INFO tune BiasOnly {'reg_item': 25.0, 'reg_user': 15.0} -> val_rmse=0.9931
+2026-10-25 23:35:18,139 INFO tune BiasOnly {'reg_item': 25.0, 'reg_user': 25.0} -> val_rmse=0.9957
+2026-10-25 23:35:18,140 INFO BiasOnly best params: {'reg_item': 5.0, 'reg_user': 5.0}
+2026-10-25 23:35:18,489 INFO BiasOnly     seed=None rmse=0.9909 ndcg@10=0.0414 fit=0.2s
+2026-10-25 23:35:20,263 INFO tune ALSMatrixFactorization {'n_factors': 10, 'reg': 0.05} -> val_rmse=1.0348
+2026-10-25 23:35:22,024 INFO tune ALSMatrixFactorization {'n_factors': 10, 'reg': 0.1} -> val_rmse=0.9810
+2026-10-25 23:35:23,749 INFO tune ALSMatrixFactorization {'n_factors': 10, 'reg': 0.2} -> val_rmse=0.9685
+2026-10-25 23:35:25,698 INFO tune ALSMatrixFactorization {'n_factors': 20, 'reg': 0.05} -> val_rmse=1.0373
+2026-10-25 23:35:27,647 INFO tune ALSMatrixFactorization {'n_factors': 20, 'reg': 0.1} -> val_rmse=0.9779
+2026-10-25 23:35:29,620 INFO tune ALSMatrixFactorization {'n_factors': 20, 'reg': 0.2} -> val_rmse=0.9679
+2026-10-25 23:35:29,621 INFO ALS-MF best params: {'n_factors': 20, 'reg': 0.2}
+2026-10-25 23:35:31,540 INFO ALS-MF       seed=0 rmse=0.9846 ndcg@10=0.0529 fit=1.8s
+2026-10-25 23:35:33,553 INFO ALS-MF       seed=1 rmse=0.9843 ndcg@10=0.0535 fit=1.9s
+2026-10-25 23:35:35,660 INFO ALS-MF       seed=2 rmse=0.9848 ndcg@10=0.0529 fit=2.0s
+2026-10-25 23:35:37,739 INFO ALS-MF       seed=3 rmse=0.9844 ndcg@10=0.0534 fit=2.0s
+2026-10-25 23:35:39,627 INFO ALS-MF       seed=4 rmse=0.9848 ndcg@10=0.0535 fit=1.8s
+2026-10-25 23:36:09,683 INFO tune <lambda> {'k': 20, 'shrink': 10.0} -> val_rmse=0.9745
+2026-10-25 23:36:40,334 INFO tune <lambda> {'k': 20, 'shrink': 50.0} -> val_rmse=0.9752
+2026-10-25 23:37:14,862 INFO tune <lambda> {'k': 50, 'shrink': 10.0} -> val_rmse=0.9737
+2026-10-25 23:37:42,858 INFO tune <lambda> {'k': 50, 'shrink': 50.0} -> val_rmse=0.9746
+2026-10-25 23:37:42,859 INFO UserKNN best params: {'k': 50, 'shrink': 10.0}
+2026-10-25 23:38:11,539 INFO UserKNN      seed=None rmse=0.9882 ndcg@10=0.0076 fit=28.6s
+2026-10-25 23:39:08,996 INFO tune <lambda> {'k': 20, 'shrink': 10.0} -> val_rmse=1.0024
+2026-10-25 23:40:01,913 INFO tune <lambda> {'k': 20, 'shrink': 50.0} -> val_rmse=1.0092
+2026-10-25 23:40:54,743 INFO tune <lambda> {'k': 50, 'shrink': 10.0} -> val_rmse=1.0024
+2026-10-25 23:41:49,250 INFO tune <lambda> {'k': 50, 'shrink': 50.0} -> val_rmse=1.0069
+2026-10-25 23:41:49,252 INFO ItemKNN best params: {'k': 20, 'shrink': 10.0}
+2026-10-25 23:42:47,344 INFO ItemKNN      seed=None rmse=1.0325 ndcg@10=0.0184 fit=58.0s
+2026-10-25 23:42:47,395 INFO 
+              rmse             mae         precision@10         recall@10         ndcg@10        
+              mean     std    mean     std         mean     std      mean     std    mean     std
+model                                                                                            
+GlobalMean  1.2099     NaN  1.0055     NaN       0.0240     NaN    0.0240     NaN  0.0312     NaN
+ItemMean    1.0720     NaN  0.8617     NaN       0.0406     NaN    0.0374     NaN  0.0435     NaN
+Popularity  1.0720     NaN  0.8617     NaN       0.0733     NaN    0.0730     NaN  0.0915     NaN
+Random      1.2099  0.0000  1.0055  0.0000       0.0069  0.0010    0.0065  0.0009  0.0078  0.0014
+BiasOnly    0.9909     NaN  0.7874     NaN       0.0377     NaN    0.0346     NaN  0.0414     NaN
+ALS-MF      0.9846  0.0002  0.7822  0.0002       0.0476  0.0006    0.0417  0.0007  0.0532  0.0003
+UserKNN     0.9882     NaN  0.7760     NaN       0.0058     NaN    0.0049     NaN  0.0076     NaN
+ItemKNN     1.0325     NaN  0.8052     NaN       0.0190     NaN    0.0108     NaN  0.0184     NaN

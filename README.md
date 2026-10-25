@@ -1,8 +1,8 @@
 # Can you game the algorithm? A red-team / blue-team case study
 
-Shilling (profile injection) attacks and defences on a neighbourhood and matrix-factorisation recommender, MovieLens 100K. Course: CSE4143 Recommender System. Author: Devang Pradeep Mishra (23FE10CSE00659).
+Shilling (profile injection) attacks and defences on a neighbourhood and matrix-factorisation recommender, MovieLens 100K. Course: CSE4143 Recommender System. Author: Devang Pradeep Mishra.
 
-Status: baselines, evaluation harness, attack generators and impact measurement done. Defences, the full experiment grid and the report are next. `results/pilot_attack_als_GLOBALSPLIT_superseded.csv` was produced on the flawed global split and must not be cited.
+Status: all stages implemented and run at reduced scale (see the report's limitations). `results/pilot_attack_als_GLOBALSPLIT_superseded.csv` was produced on the flawed global split and must not be cited.
 
 ## Get the data
 
