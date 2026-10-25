@@ -1,0 +1,13 @@
+# Dataset: GroupLens terms forbid redistribution. Download it yourself (see README).
+data/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Local scratch and notes that are not part of the code release
+results/*_stdout.txt
+results/*superseded*
+Case_Study_Method_Guide.md
