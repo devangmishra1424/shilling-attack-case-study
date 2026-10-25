@@ -6,6 +6,7 @@ Usage (from case_study/):  python scripts/pilot_attack.py --model als --targets 
 from __future__ import annotations
 
 import argparse
+import ast
 import logging
 import sys
 import time
@@ -26,10 +27,16 @@ from recattack.mf import ALSMatrixFactorization  # noqa: E402
 
 log = logging.getLogger("pilot")
 
+def best(model: str) -> dict:
+    """Best hyper-parameters chosen on the validation tail, as saved by run_baselines.py."""
+    rows = pd.read_csv(ROOT / "results" / "baselines_user.csv")
+    return ast.literal_eval(rows.loc[rows["model"] == model, "params"].iloc[0])
+
+
 MODELS = {
-    "als": lambda: ALSMatrixFactorization(n_factors=20, reg=0.1, seed=0),
-    "userknn": lambda: KNNRecommender("user", k=20, shrink=10.0),
-    "itemknn": lambda: KNNRecommender("item", k=20, shrink=10.0),
+    "als": lambda: ALSMatrixFactorization(seed=0, **best("ALS-MF")),
+    "userknn": lambda: KNNRecommender("user", **best("UserKNN")),
+    "itemknn": lambda: KNNRecommender("item", **best("ItemKNN")),
 }
 
 

@@ -1,0 +1,14 @@
+TARGET 550: Lord of Illusions (1995) | genuine ratings 17 mean 2.41 | genres ['Horror'] | eligible users 926
+BEFORE: mean rank 1445 of ~1600 candidates, hit@10 0.000, mean predicted rating 2.96
+
+ATTACK random: 48 fakes, genre -, selected []
+  example fake rates 85 movies, e.g. [('Toy Story (1995)', 5), ('Babe (1995)', 2), ('Terminator 2: Judgment Day (1991)', 2), ('Godfather, The (1972)', 2)] target 5
+  attacked: mean rank 15, hit@10 0.775, mean predicted rating 4.45
+  defended (MAD trust): mean rank 497, hit@10 0.028, mean predicted rating 3.68
+  MAD flags 48 of 48 fakes and 81 of 943 honest users; mean trust fakes 0.24, honest 0.97
+
+ATTACK segment: 48 fakes, genre Horror, selected ['Scream (1996)', 'Alien (1979)', 'Jaws (1975)']
+  example fake rates 88 movies, e.g. [('Toy Story (1995)', 1), ('Babe (1995)', 1), ('Terminator 2: Judgment Day (1991)', 1), ('Godfather, The (1972)', 1)] target 5
+  attacked: mean rank 3, hit@10 0.985, mean predicted rating 4.95
+  defended (MAD trust): mean rank 434, hit@10 0.072, mean predicted rating 3.75
+  MAD flags 48 of 48 fakes and 86 of 943 honest users; mean trust fakes 0.18, honest 0.97
